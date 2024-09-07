@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: youngSerif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+    background: hsl(30, 54%, 90%);
+    font-family: Outfit;
+    color: hsl(24, 5%, 18%);
+}
+
+h1, h2 {
+    font-family: youngSerif;
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.card {
+    background: hsl(0, 0%, 100%);
+    width: 650px;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.card img {
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.prep_time {
+    background: hsl(330, 100%, 98%);
+    color: hsl(332, 51%, 32%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.prep_time h3 {
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.prep_time ul, .ingredients ul, .instructions ol {
+    padding-left: 20px;
+}
+
+.prep_time li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.prep_time li, .ingredients li, .instructions li {
+    color: hsl(30, 10%, 34%);
+    margin: 15px 0px;
+    padding-left: 10px;
+}
+
+.ingredients, .instructions, .nutrition {
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients li::marker, .instructions li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions li::marker {
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition p {
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition tr {
+    border-bottom: 1px solid hsl(30, 54%, 90%)
+}
+
+.nutrition tr:last-child {
+    border-bottom: none;
+}
+
+.nutrition tr td {
+    color: hsl(30, 10%, 34%);
+    padding: 10px
+}
+
+.nutrition tr td b {
+    color: hsl(14, 45%, 36%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 5px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 740px) {
+    body {
+        background: hsl(0, 0%, 100%);
+        margin: 0;
+    }
+    .card {
+        width: 100%;
+        padding: 0;
+    }
+    .card {
+        margin: 0;
+    }
+    .card img {
+        border-radius: 0;
+    }
+    .recipe_content {
+        padding: 20px;
+    }
+}
